@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<title>Mock Charge Sync</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="Mock Charge Sync foi desenvolvido para sincronizar as cargas de todos os jogadores."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta charset="UTF-8"/>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="css/config.css"/>
+  <link rel="stylesheet" href="css/angular-material.min.css"/>
+  <!-- CSS ccountdown -->
+  <link rel="stylesheet" type="text/css" href="css/style-ccountdown.css"/>
+  <!-- JQUERY -->
+  <script src="js/jquery.min.js"></script>
+  <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+</head>
+<body ng-app="MockChargeSync" ng-controller="MainScreen" ng-cloak="">
+<md-toolbar>
+	<div class="md-toolbar-tools">
+		<md-button class="md-icon-button" aria-label="Truck">
+		  <md-icon md-svg-icon="images/truck.svg"></md-icon>
+		</md-button>
+		<h2>
+		  <span><strong>Mock</strong> Charge Sync</span>
+		</h2>
+		<span flex="true"></span>
+		<span>Language</span><pre> </pre>
+		<div id="google_translate_element"></div>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			}
+		</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<md-button id="info" class="md-icon-button" aria-label="Info" ng-click="showAlert()">
+		    <md-icon md-svg-icon="images/infooutline.svg"></md-icon>
+		</md-button>
+	</div>
+</md-toolbar>
+<div id="pageContent">
+
+<div class="block-content">
+	<div layout="row" layout-xs="column">
+		<div flex="true" layout-margin="true">
+		<div class="block-text">
+				<h2 class="block-text-title">Sobre o Mock Charge Sync</h2>
+				<p>O Mock Charge Sync nada mais é do que um software que faz uma "cópia" da sua carga possibilitando que você compartilhe com seus amigos.</p>
+				<p>Se for bem aceito pelo pessoal, poderá ser evoluido no futuro.</p>
+			</div>
+			<div class="block-text" style="margin-top: 1%">
+				<h2 class="block-text-title">Por onde começo?</h2>
+				Primeiramente baixe o MCS (Mock Charge Sync), após ter baixado basta ler nosso tutorial.<br></br>
+				<div layout="row">
+					<div flex="true">
+						<div layout="column">
+							<md-button class="md-primary md-raised md-hue-2" onClick="window.location.href = 'download/MCS.zip'">Baixar MCS</md-button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block-text">
+				<h2 class="block-text-title">Tradução</h2>
+				<div layout="row">
+				  <div flex="80">
+						<p>Clique em baixar tradução para ver as linguagens disponíveis!</p>
+				    <p>Para contribuir com a tradução, basta baixar o arquivo e traduzir, após isso envie no email: supermockmensagem@gmail.com.</p>
+				  </div>
+				  <div flex="true" hide-sm="" hide-xs="">
+				    <md-button class="md-primary md-raised md-hue-2" ng-click="showTranslate()">Baixar tradução</md-button>
+				  </div>
+				</div>
+				<h2 class="block-text-title">Doação</h2>
+				<div layout="row">
+				  <div flex="80">
+				    Caso você queira doar qualquer valor para ajudar o desenvolvedor fique a vontade...
+				  </div>
+				  <div flex="true" hide-sm="" hide-xs="" style="display: flex;justify-content: center;">
+				    <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+					<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+					<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+					<input type="hidden" name="currency" value="BRL" />
+					<input type="hidden" name="receiverEmail" value="supermock@bol.com.br" />
+					<input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+					</form>
+					<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div flex="true">
+			<div class="block-text" style="margin-top: 1%">
+				<h2 class="block-text-title" align="center">Tutorial</h2>
+					<md-content class="md-content-border">
+					<h3 align="center">Compartilhando sua carga</h3>
+					1º Abra o Mock Charge Sync. (Software)<br></br>
+					2º Pegue uma carga.<br></br>
+					3º Salve o jogo no slotSalvo informado no MCS. (Salvar e Carregar -> Salvar o jogo)<br></br>
+					4º Clique em compartilhar.<br></br>
+					5º Compartilhe o código com seus amigos.<br></br>
+					<h3 align="center">Carregando uma carga</h3>
+					1º Verifique com seu amigo se suas DLCs (ativadas), são as mesmas! <-- Etapa muito importante!<br></br>
+					2º Copie o código que seu amigo enviou a você, e clique em carregar carga.<br></br>
+					3º Entre no jogo e carregue o slotSalvo informado no MCS.<br></br>
+					<br></br><b style="color:red">Requisitos:</b> Ter um caminhão próprio em seu perfil e baixar o <a href="https://www.java.com/pt_BR/download/" target="_BLANK">Java</a>.
+					</md-content>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- FONTES DO GOOGLE : início -->
+  <script type="text/javascript">
+	var primary_font_code = 'Sintony:400,700:latin,latin-ext';
+	var secondary_font_code = 'Bree+Serif::latin,latin-ext';
+	var web_fonts = [primary_font_code];
+	if(secondary_font_code != ''){
+	    web_fonts.push(secondary_font_code);
+	}
+	
+	WebFontConfig = {
+	    google: { families: web_fonts }
+	};
+	(function() {
+	    var wf = document.createElement('script');
+	    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	})();
+  </script>
+<!-- FONTES DO GOOGLE : fim -->
+
+<script id="_wau8eh">var _wau = _wau || [];
+_wau.push(["tab", "hroazsyseqpy", "8eh", "left-lower"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+</div>
+   
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <script src="js/angular-aria.min.js"></script>
+  <script src="js/angular-messages.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  
+  <!-- Clipboardjs -->
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/Clipboard.js"></script>
+  
+  <!-- Angular Material Library -->
+  <script src="js/angular-material.min.js"></script>
+  <!-- Load configurations - MainControl -->
+  <script src="js/br.com.mock.chargesync.js"></script>
+
+</body>
+</html>

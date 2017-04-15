@@ -1,0 +1,32 @@
+:lbMotorista=Driver:/:
+:lbSlotSalvo=SlotSave:/:
+:lbURLCompartilhamento=Sharing key:/:
+:btCompartilharCarga=Share cargo:/:
+:tfURLCompartilhamento=Click share to generate a key.:/:
+:btCarregarCarga=Load cargo:/:
+:btSave=Save:/:
+:btMudarPerfil=Change profile:/:
+:btAceito=I have read and accepted:/:
+:btNaoAceito=I do not accept:/:
+:tlMain=<html><body bgcolor="white"><div width="450" style="padding: 8px"><font color="black"><u>Terms of use</u><br><br>By using this software you agree that you will only use, without making any changes to the software or plagiarize.<br><br>This software offers the possibility to synchronize your load with your friends.<br><br>You agree that your sharing key with the load information will be shared with the analysis.<br><br><u>Informations</u><br>Synchronizer in beta version 1.0.0 if anything happens, just pick up the game.backup.sii file and replace it with the game.sii that is in the SlotSave folder.<br>It will only work in Java with the version less than or equal to 8.<br>If it is being used well in the future it can be redone and improved even more!<br>Software created by: SuperMock<br>Version: 1.0.0<br><br> *Have fun with your friends using the software!</div></body></font></html>:/:
+:tlMainETSDIR=Select your Euro Truck Simulator 2 folder:/:
+:tlMainDCP=Choose your profile:/:
+:tlMainDCL=Choose the language file:/:
+:msgWarn1=<html><font size="5">A window will open, select the profile you want the load to load.<br><br><center><font color="yellow">IMPORTANT INFORMATIONS!</font></center>- Before loading the first charge through the launcher, enter the game and save on top of the 'slotSave'<br>you will be informed!<br>- You must have a truck of your own.</font></html>:/:
+:msgWarn2=<html>Failed to read save game!<br>If the error persists contact the developer.</html>:/:
+:msgWarn3=Failed to load storage if error persists contact developer!:/:
+:msgWarn4=Failed to start the program!:/:
+:msgWarn5=Please try again if the error persists run as administrator if it still does not work please contact the developer.:/:
+:msgWarn6=Upload loaded successfully!:/:
+:msgWarn7=To share a charge, you must first, get a load on the game and save on the SlotSave informed!:/:
+:msgWarn8=Copy the key before!:/:
+:msgWarn9=This key does not exist =/:/:
+:msgWarn10=New version available!:/:
+:msgWarn11=Please choose a profile!:/:
+:msgWarn12=There is no profile on your ETS 2!:/:
+:msgWarn13=Please choose the "language.mytxt" file to change your language!:/:
+:msgWarn14=<html><font size="3" color="#ADD8E6">Linguagem alterada com sucesso, o programa será reiniciado!<br>Language changed successfully, the program will be restarted!</font></html>:/:
+:msgWarn15=<html><font size="3" color="red">There is no slotSave in your profile!<br>Program can not continue ...<br>Open the MCS again and select another profile.</font></html>:/:
+:msgWarn16=Failed to load load, if error persists contact developer.:/:
+:msgWarn17=Failed to get share key, please make sure you have an internet connection, and try again!:/:
+:msgWarn18=This key is invalid!:/:
